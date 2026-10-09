@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menna Ali | Frontend Developer</title>
+
+    <meta name="description"
+          content="Menna Ali's personal portfolio and web development projects.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <a href="#home" class="logo">Menna<span>.</span></a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button id="theme-toggle"
+                    class="theme-btn"
+                    aria-label="Toggle dark mode">
+                ☾
+            </button>
+
+            <button id="menu-toggle"
+                    class="menu-btn"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+
+            <div class="hero-content">
+                <p class="eyebrow">
+                    HELLO, WELCOME TO MY WORLD
+                </p>
+
+                <h1>
+                    I'm <span>Menna Ali</span>
+                    <br>
+                    Frontend Developer
+                </h1>
+
+                <p class="hero-description">
+                    I'm a Computer Science student who loves
+                    building beautiful, responsive and user-friendly
+                    websites. I'm learning, creating and growing
+                    with every project.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work ↗
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="status-dot"></span>
+                    Available for learning and new opportunities
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-glow"></div>
+
+                <div class="profile-card">
+                    <div class="card-top">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="card-label">my-portfolio.js</span>
+                    </div>
+
+                    <div class="code-content">
+                        <p><span class="purple">const</span> developer = {</p>
+                        <p class="indent">name: <span class="green">'Menna'</span>,</p>
+                        <p class="indent">role: <span class="green">'Frontend Developer'</span>,</p>
+                        <p class="indent">learning: [</p>
+                        <p class="indent2"><span class="orange">'HTML'</span>,</p>
+                        <p class="indent2"><span class="orange">'CSS'</span>,</p>
+                        <p class="indent2"><span class="orange">'JavaScript'</span></p>
+                        <p class="indent">],</p>
+                        <p class="indent">passion: <span class="green">'Creating ✨'</span></p>
+                        <p>};</p>
+                    </div>
+
+                    <div class="card-bottom">
+                        <span>●</span> Always learning something new
+                    </div>
+                </div>
+
+                <div class="floating-badge badge-one">
+                    <span>✦</span> Creative
+                </div>
+
+                <div class="floating-badge badge-two">
+                    <span>〈/〉</span> Coding
+                </div>
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+
+            <div class="section-heading">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About <span>Me</span></h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-icon">✧</div>
+
+                <div class="about-text">
+                    <h3>A student with a passion for technology.</h3>
+
+                    <p>
+                        I'm studying Computer Science at Suez Canal
+                        University. I enjoy learning how websites work
+                        and turning ideas into real projects.
+                    </p>
+
+                    <p>
+                        My goal is to keep improving my development
+                        skills, gain practical experience and work
+                        on projects that solve real problems.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Let's connect <span>↗</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills" id="skills">
+
+            <div class="section-heading">
+                <p class="eyebrow">WHAT I'M LEARNING</p>
+                <h2>My <span>Skills</span></h2>
+                <p class="section-description">
+                    Technologies I'm learning and practicing.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-icon html-icon">5</div>
+                    <h3>HTML5</h3>
+                    <p>Building website structure.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon css-icon">✳</div>
+                    <h3>CSS3</h3>
+                    <p>Styling and responsive layouts.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon js-icon">JS</div>
+                    <h3>JavaScript</h3>
+                    <p>Adding interaction to websites.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon git-icon">⌘</div>
+                    <h3>Git & GitHub</h3>
+                    <p>Learning version control.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+      
+<!-- Projects Section -->
+<section class="section projects" id="projects">
+
+    <div class="section-heading">
+        <p class="eyebrow">MY PROJECTS</p>
+        <h2>Featured <span>Projects</span></h2>
+        <p class="section-description">
+            Projects I build while learning frontend development.
+        </p>
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- Project 1: Restaurant Website -->
+        <article class="project-card">
+            <div class="project-preview preview-one">
+                <div class="preview-window">
+                    <div class="preview-header"></div>
+                    <div class="preview-banner"></div>
+                    <div class="preview-lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <span class="preview-number">01</span>
+            </div>
+
+            <div class="project-info">
+                <p class="project-type">WEB DESIGN</p>
+                <h3>Restaurant Website</h3>
+
+                <p>
+                    A responsive restaurant website with a menu,
+                    food categories and an interactive order list.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a href="restaurant-website/index.html"
+                   class="project-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Project ↗
+                </a>
+            </div>
+        </article>
+
+        <!-- Project 2: Portfolio Website -->
+        <article class="project-card">
+            <div class="project-preview preview-two">
+                <div class="preview-window">
+                    <div class="preview-header"></div>
+                    <div class="preview-banner"></div>
+                    <div class="preview-lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <span class="preview-number">02</span>
+            </div>
+
+            <div class="project-info">
+                <p class="project-type">PERSONAL BRAND</p>
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    My personal website to introduce myself,
+                    showcase my skills and present my projects.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a href="#home" class="project-link">
+                    View My Portfolio ↗
+                </a>
+            </div>
+        </article>
+
+        <!-- Project 3: Coming Soon -->
+        <article class="project-card">
+            <div class="project-preview preview-three">
+                <div class="preview-window">
+                    <div class="preview-header"></div>
+                    <div class="preview-banner"></div>
+                    <div class="preview-lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <span class="preview-number">03</span>
+            </div>
+
+            <div class="project-info">
+                <p class="project-type">IN PROGRESS</p>
+                <h3>Product Showcase</h3>
+
+                <p>
+                    A product landing page with a modern design.
+                    This project will be added when it is completed.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <span class="project-link">
+                    Coming Soon
+                </span>
+            </div>
+        </article>
+
+    </div>
+
+    <p class="projects-note">
+        More projects coming soon as I continue learning and building.
+    </p>
+
+</section>
