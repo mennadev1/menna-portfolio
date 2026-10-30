@@ -1,290 +1,240 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Menna Ali | Frontend Developer</title>
-
-    <meta name="description"
-          content="Menna Ali's personal portfolio and web development projects.">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Menna Ali — Frontend Developer portfolio." />
+  <title>Menna Ali | Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Menna home">
+        <span class="brand-mark">✿</span>
+        <span><strong>Menna</strong><small>Frontend Developer</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+      </div>
+      <a class="button button-dark nav-button" href="#contact">Let's talk <span>↗</span></a>
+    </nav>
+  </header>
 
-    <!-- Navbar -->
-    <header class="header">
-        <nav class="navbar">
-            <a href="#home" class="logo">Menna<span>.</span></a>
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> HELLO, WELCOME TO MY WORLD</p>
+        <h1>Hi, I'm <span>Menna.</span></h1>
+        <h2>I build things for the web<span class="dot">.</span></h2>
+        <p class="hero-text">I'm a frontend developer in progress who enjoys turning ideas into clean, responsive, and user-friendly websites.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#projects">Explore my work <span>↘</span></a>
+          <a class="text-link" href="#about">More about me <span>→</span></a>
+        </div>
+       
+<div class="socials">
+    <a href="https://github.com/mennadev1"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="GitHub">GH</a>
 
-            <button class="menu-toggle" id="menu-toggle"
-                    aria-label="Toggle navigation"
-                    aria-expanded="false">
-                ☰
-            </button>
+    <a href="https://www.linkedin.com/in/menna-ali-99b375332/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="LinkedIn">in</a>
 
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <a href="mailto:menna2288ali@gmail.com"
+       aria-label="Email">@</a>
+</div>
 
-            <button class="theme-toggle" id="theme-toggle"
-                    aria-label="Toggle dark mode">
-                🌙
-            </button>
-        </nav>
-    </header>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="sun-shape"></div>
+        <div class="photo-frame">
+          
+          <img src="my-photo.jpeg" alt="Menna's portrait" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="photo-placeholder"><span class="camera-icon">＋</span><strong>Your photo goes here</strong><small>Add a file named <b>my-photo.jpg</b></small></div>
+        </div>
+        <span class="hand-note note-top">a little creativity<br> goes a long way ↙</span>
+        <span class="hand-note note-bottom">Code · Create · Repeat ♡</span>
+        <span class="sparkle sparkle-one">✳</span><span class="sparkle sparkle-two">✦</span>
+      </div>
+    </section>
 
-    <main>
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2>Curious mind.<br><span>Creative builder.</span></h2>
+          <p>I'm Menna, a Computer Science student who loves learning how the web works and building websites that feel simple and enjoyable to use.</p>
+          <p>I'm growing my skills one project at a time and always looking for opportunities to learn, collaborate, and create something useful.</p>
+          <a class="text-link" href="#contact">Let's connect <span>→</span></a>
+        </div>
+        <div class="about-cards reveal">
+          <article class="mini-card"><span class="mini-icon">⌘</span><h3>Currently learning</h3><p>JavaScript and modern frontend skills</p></article>
+          <article class="mini-card"><span class="mini-icon">♡</span><h3>What I value</h3><p>Clean code, thoughtful details, and teamwork</p></article>
+          <article class="mini-card"><span class="mini-icon">↗</span><h3>My goal</h3><p>Build useful digital experiences and keep improving</p></article>
+        </div>
+      </div>
+    </section>
 
-        <!-- Hero -->
-        <section class="hero section" id="home">
-            <div class="hero-content reveal">
-                <p class="eyebrow">HELLO, I'M</p>
+    <section class="projects-section section-pad" id="projects">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow">THINGS I'VE BEEN WORKING ON</p><h2>Selected <span>projects.</span></h2></div><p class="heading-note">A few ideas brought to life<br>with code and curiosity.</p></div>
+        <div class="project-grid">
 
-                <h1>Menna Ali</h1>
+    <!-- Project 01: Restaurant -->
+    <article class="project-card reveal">
+        <div class="project-preview restaurant-preview">
+            <div class="mock-browser">
+                <span></span><span></span><span></span>
+                <small>oliveandthyme.com</small>
+            </div>
+            <div class="restaurant-art">
+                <span class="tiny-label">FRESH · LOCAL · LOVELY</span>
+                <strong>Good food.<br>Good mood.</strong>
+                <p>Made with love, served with joy.</p>
+                <span class="food-circle">✿</span>
+            </div>
+        </div>
 
-                <h2>Frontend Developer <span>&</span> CS Student</h2>
-
-                <p class="hero-description">
-                    I build responsive and user-friendly websites using
-                    HTML, CSS, and JavaScript. I'm always learning and
-                    working to improve my development skills.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        View My Projects
-                    </a>
-
-                    <a href="#contact" class="btn btn-secondary">
-                        Contact Me
-                    </a>
-                </div>
+        <div class="project-info">
+            <div class="project-title-row">
+                <h3>Restaurant Website</h3>
+                <span class="project-number">01</span>
             </div>
 
-            <div class="hero-decoration reveal" aria-hidden="true">
-                <div class="code-card">
-                    <span class="code-dot"></span>
-                    <span class="code-dot"></span>
-                    <span class="code-dot"></span>
+            <p>A modern restaurant website with a clean design and welcoming experience.</p>
 
-                    <p><span>const</span> developer = {</p>
-                    <p class="code-indent">name: "Menna",</p>
-                    <p class="code-indent">role: "Frontend Developer",</p>
-                    <p class="code-indent">learning: true</p>
-                    <p>};</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- About -->
-        <section class="section about" id="about">
-            <div class="section-heading reveal">
-                <p class="eyebrow">GET TO KNOW ME</p>
-                <h2>About <span>Me</span></h2>
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
             </div>
 
-            <div class="about-content reveal">
-                <p>
-                    I'm a Computer Science student at the Faculty of
-                    Computers and Information, Suez Canal University.
-                    I'm interested in frontend development and enjoy
-                    turning ideas into clean, responsive websites.
-                </p>
+            <div class="project-links">
+                <a href="https://mennadev1.github.io/restaurant-website/"
+                   target="_blank" rel="noopener noreferrer" class="text-link">
+                    Live Preview ↗
+                </a>
 
-                <p>
-                    I'm currently building my skills through practical
-                    projects and continuous learning. My goal is to
-                    gain real-world experience and grow as a developer.
-                </p>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section class="section skills" id="skills">
-            <div class="section-heading reveal">
-                <p class="eyebrow">WHAT I WORK WITH</p>
-                <h2>My <span>Skills</span></h2>
-            </div>
-
-            <div class="skills-grid reveal">
-                <div class="skill-card">
-                    <span class="skill-icon">🌐</span>
-                    <h3>HTML</h3>
-                    <p>Semantic page structure</p>
-                </div>
-
-                <div class="skill-card">
-                    <span class="skill-icon">🎨</span>
-                    <h3>CSS</h3>
-                    <p>Styling and responsive layouts</p>
-                </div>
-
-                <div class="skill-card">
-                    <span class="skill-icon">⚡</span>
-                    <h3>JavaScript</h3>
-                    <p>Interactive web experiences</p>
-                </div>
-
-                <div class="skill-card">
-                    <span class="skill-icon">🔧</span>
-                    <h3>Git & GitHub</h3>
-                    <p>Version control and hosting</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <section class="section projects" id="projects">
-            <div class="section-heading reveal">
-                <p class="eyebrow">SOME OF MY WORK</p>
-                <h2>My <span>Projects</span></h2>
-
-                <p class="section-description">
-                    Here are some projects I've worked on while learning
-                    frontend development.
-                </p>
-            </div>
-
-            <div class="projects-grid">
-
-                <!-- Restaurant Project -->
-                <article class="project reveal">
-                    <div class="project-number">01</div>
-
-                    <div class="project-info">
-                        <p class="project-type">WEB DEVELOPMENT</p>
-                        <h3>Restaurant Website</h3>
-
-                        <p>
-                            A restaurant website built with HTML and CSS,
-                            focusing on layout, design, and responsive
-                            presentation.
-                        </p>
-
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                        </div>
-
-                        <div class="project-links">
-                            <a class="project-link"
-                               href="https://mennadev1.github.io/restaurant-website/"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                Live Demo ↗
-                            </a>
-
-                            <a class="project-link"
-                               href="https://github.com/mennadev1/restaurant-website"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                Source Code ↗
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Portfolio Project -->
-                <article class="project reveal">
-                    <div class="project-number">02</div>
-
-                    <div class="project-info">
-                        <p class="project-type">PERSONAL WEBSITE</p>
-                        <h3>Personal Portfolio</h3>
-
-                        <p>
-                            My personal portfolio showcasing my skills,
-                            projects, and progress as a frontend developer.
-                        </p>
-
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-
-                        <div class="project-links">
-                            <a class="project-link"
-                               href="https://mennadev1.github.io/menna-portfolio/"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                Live Demo ↗
-                            </a>
-
-                            <a class="project-link"
-                               href="https://github.com/mennadev1/menna-portfolio"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                Source Code ↗
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Upcoming Project -->
-                <article class="project reveal">
-                    <div class="project-number">03</div>
-
-                    <div class="project-info">
-                        <p class="project-type">COMING SOON</p>
-                        <h3>Product Showcase</h3>
-
-                        <p>
-                            An upcoming project to practice product
-                            presentation, responsive design, and
-                            JavaScript interactions.
-                        </p>
-
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-
-                        <span class="coming-soon">In Progress</span>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section class="section contact" id="contact">
-            <div class="contact-box reveal">
-                <p class="eyebrow">LET'S CONNECT</p>
-
-                <h2>Let's Build Something <span>Great</span></h2>
-
-                <p>
-                    I'm open to learning opportunities, collaboration,
-                    and connecting with other developers.
-                </p>
-
-                <a href="https://github.com/mennadev1"
-                   class="btn btn-primary"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Find Me on GitHub ↗
+                <a href="https://github.com/mennadev1/restaurant-website"
+                   target="_blank" rel="noopener noreferrer" class="text-link">
+                    Source Code ↗
                 </a>
             </div>
-        </section>
+        </div>
+    </article>
 
-    </main>
+    <!-- Project 02: Sprout -->
+    <article class="project-card reveal">
+        <div class="project-preview courses-preview">
+            <div class="mock-browser">
+                <span></span><span></span><span></span>
+                <small>learnnest.com</small>
+            </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2026 Menna Ali. Built with HTML, CSS & JavaScript.</p>
-        <a href="#home" class="back-to-top">Back to top ↑</a>
-    </footer>
+            <div class="courses-art">
+                <div class="course-nav">
+                    learn<span>nest.</span>
+                    <small>Explore courses</small>
+                </div>
 
-    <script src="script.js"></script>
+                <div class="course-hero">
+                    <div>
+                        <small>YOUR NEXT CHAPTER</small>
+                        <strong>Learn a skill.<br>Open a door.</strong>
+                        <p>Courses made for curious minds.</p>
+                        <span class="fake-button">Find a course ↗</span>
+                    </div>
+                    <div class="course-orbit">✳</div>
+                </div>
+
+                <div class="course-pills">
+                    <span>Design</span>
+                    <span>Development</span>
+                    <span>Marketing</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-info">
+            <div class="project-title-row">
+                <h3>Sprout Landing Page</h3>
+                <span class="project-number">02</span>
+            </div>
+
+            <p>A modern landing page for an online learning platform, featuring course categories and a clean, user-friendly design.</p>
+
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://mennadev1.github.io/sprout-landing-page/sprout/"
+                   target="_blank" rel="noopener noreferrer" class="text-link">
+                    Live Preview ↗
+                </a>
+
+                <a href="https://github.com/mennadev1/sprout-landing-page"
+                   target="_blank" rel="noopener noreferrer" class="text-link">
+                    Source Code ↗
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Project 03: Coming Soon -->
+    <article class="project-card project-card-placeholder reveal">
+        <div class="add-project">
+            <span>＋</span>
+            <strong>Your next project</strong>
+            <small>Add another project when you're ready</small>
+        </div>
+
+        <div class="project-info">
+            <div class="project-title-row">
+                <h3>Coming soon</h3>
+                <span class="project-number">03</span>
+            </div>
+            <p>Every project is a chance to learn something new and make the next one even better.</p>
+            <div class="tags">
+                <span>In progress</span>
+            </div>
+        </div>
+    </article>
+
+</div>
+      </div>
+    </section>
+
+    <section class="skills-section section-pad" id="skills">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow">TOOLS IN MY TOOLBOX</p><h2>Skills & <span>learning.</span></h2></div><p class="heading-note">Always learning. Always<br>building my next skill.</p></div>
+        <div class="skills-grid reveal">
+          <div class="skill"><span class="skill-symbol html-symbol">5</span><strong>HTML5</strong><small>Structure</small></div>
+          <div class="skill"><span class="skill-symbol css-symbol">3</span><strong>CSS3</strong><small>Styling</small></div>
+          <div class="skill"><span class="skill-symbol js-symbol">JS</span><strong>JavaScript</strong><small>Interactivity</small></div>
+          <div class="skill"><span class="skill-symbol">▣</span><strong>Responsive design</strong><small>All screen sizes</small></div>
+          <div class="skill"><span class="skill-symbol">⌘</span><strong>Git & GitHub</strong><small>Version control</small></div>
+          <div class="skill"><span class="skill-symbol">✳</span><strong>UI basics</strong><small>Layout & usability</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section container" id="contact">
+      <div class="contact-box reveal"><div><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's make something <span>lovely.</span></h2><p>Have an idea, a question, or an opportunity? I'd love to hear from you.</p></div><a class="button button-dark" href="mailto:menna@example.com">Send me a message <span>↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="footer container"><a class="brand footer-brand" href="#home"><span class="brand-mark">✿</span><span><strong>Menna</strong><small>Made with care & curiosity.</small></span></a><p>© <span id="year"></span> Menna Ali. Keep growing ✿</p><a class="back-top" href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
 </body>
 </html>
